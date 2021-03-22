@@ -52,7 +52,7 @@ class momentService {
     const [result] = await connection.execute(statement, [id]);
 
     // 返回结果
-    return result;
+    return result[0];
   }
 
   async getMomentList(offset, size) {
